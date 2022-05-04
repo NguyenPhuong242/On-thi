@@ -1,3 +1,6 @@
+import java.util.Set;
+import java.util.HashSet;
+
 public class User{
   private final int id;
   Set<Track> likes = new HashSet<>();
