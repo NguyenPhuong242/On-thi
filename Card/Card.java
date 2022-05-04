@@ -52,6 +52,10 @@ public class Card {
     }
 
     public String toString(){
-        return name + " " + shiny + " " + value + " " + year;
+        String shi = " ";
+        if (shiny = true){
+            shi += "shiny";
+        }
+        return name + " " + shi + " " + value + " " + year;
     }
 }
