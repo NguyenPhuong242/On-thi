@@ -1,4 +1,4 @@
-public class Track{
+public class Track implements Comparable<Track>{
   private String title;
   private String artist;
   private String album;
@@ -51,7 +51,12 @@ public class Track{
     if (!this.album.equals(track.album)) return false;
     if (this.year != track.year) return false;
     return true;
+  }
+  public int compareTo(Track track) {
+    return this.year.compareTo(track.year);
+  }
 }
+  
   
   
     
