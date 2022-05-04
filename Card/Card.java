@@ -3,6 +3,7 @@ public class Card {
     private boolean shiny;
     private double value;
     private int year;
+    private int id;
 
     public String getName(){
         return name;
@@ -19,12 +20,16 @@ public class Card {
     public int getYear(){
         return year;
     }
+    
+    public int getID(){
+        return id;
 
     public Card(String name,boolean shiny, double value, int year){
         this.name = name;
         this.shiny = shiny;
         this.value = value;
         this.year = year;
+        this.id = id;
     }
 
     public Card(Card card){
