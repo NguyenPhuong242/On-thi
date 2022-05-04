@@ -15,10 +15,13 @@ public class Collector {
 
     public void addCard(Card card){
         cards.add(card);
-
     }
 
-    public void getCards(Card card){
-        cards.get(card);
+
+    public List<Card> getCards(){
+        return cards;
     }
+    
+    
+
 }
